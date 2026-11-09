@@ -1,0 +1,8 @@
+.env
+.env.*
+!.env.example
+.venv/
+.garmin-tokens/
+__pycache__/
+*.py[cod]
+sync.log

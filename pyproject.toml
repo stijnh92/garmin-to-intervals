@@ -1,0 +1,18 @@
+[project]
+name = "garmin-to-intervals"
+version = "0.1.0"
+description = "Sync planned Trenara runs from Garmin Connect to Intervals.icu"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "garminconnect>=0.3.16,<0.4",
+    "python-dotenv>=1.0,<2",
+    "requests>=2.32,<3",
+]
+
+[project.scripts]
+garmin-to-intervals = "garmin_to_intervals.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
